@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import streamlit as st
 import pandas as pd
 import random
@@ -1165,24 +1164,7 @@ def main():
     """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
-=======
-import streamlit as st
-import pandas as pd
-import random
-from datetime import datetime
-import tensorflow as tf
-import numpy as np
-from PIL import Image
-import io
-import base64
-
-# Konfiguration der Streamlit-Seite
-st.set_page_config(
-    page_title="Fashion Swipe",
-    page_icon="👗",
-    layout="centered",
-    initial_sidebar_state="collapsed"
-)
+    main()
 
 # Custom CSS für besseres Styling + Swipe Funktionalität
 st.markdown("""
@@ -1846,5 +1828,4 @@ def main():
             st.markdown(f"• {class_name}")
 
 if __name__ == "__main__":
->>>>>>> 2a10b5bc7f350355f9130a1b90c5c46a21f127b5
     main()
