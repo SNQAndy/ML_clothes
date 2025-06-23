@@ -57,10 +57,11 @@ How to use this repository
 
 4. Results
 
-Akuteller Stand (Woche 23.06): Streamlit-Anwendung mit Datensatz integriert, Model zur Vorhersage um welche Klamotten es sich handelt, Ersten Prototyp zur Vorhersage von welchen Klamotten einen gefallen könnte
+       >Akuteller Stand (Woche 23.06): Streamlit-Anwendung mit Datensatz integriert, Model zur Vorhersage um welche Klamotten es sich handelt, Ersten Prototyp zur Vorhersage von welchen Klamotten einen gefallen könnte
 
 5 Discussion
-Aktueller Probleme: 
-    Swipe Funktion muss noch integriert werden, 
-    Prototyp muss in die Website mit eingebunden werden,
-    (aktuellen Datensatz in einen Farbigen Datensatz ändern und nach Geschlechtern trennen)... muss noch angesprochen werden
+
+    >Aktueller Probleme: 
+    >Swipe Funktion muss noch integriert werden, 
+    >Prototyp muss in die Website mit eingebunden werden,
+    >(aktuellen Datensatz in einen Farbigen Datensatz ändern und nach Geschlechtern trennen)... muss noch angesprochen werden
