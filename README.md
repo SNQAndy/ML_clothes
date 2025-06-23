@@ -2,7 +2,7 @@
 Motivation
 
     >Den Struggle beim Einkaufen von neuen Klamotten, oder sogar beim entdecken von neuen Styles, kennt ein Jeder von uns.
-    >Mit unserer Anwendung wwollen wir ein Tool entwickeln, wwelches helfen soll genauere Vorstellungen und Ansprüche, in diese Richtung, formen zu können.
+    >Mit unserer Anwendung wollen wir ein Tool entwickeln, welches helfen soll genauere Vorstellungen und Ansprüche, in diese Richtung, formen zu können.
 
 Research question
 
@@ -45,11 +45,22 @@ How to use this repository
         >Kategorisieren der Kleidungsstückarten
         >Stückanzahl Ausgabe jeder Klasse
         
-    >2.Datensatz von tensorflow
+    >2.Datensatz MNIST von tensorflow Ein größerer Datensatz mit 60.000 Trainings Daten und 10.000 Testdaten als Beispiele  (https://github.com/zalandoresearch/fashion-mnist?tab=readme-ov-file)
+        >Kategorisieren der Kleidungsstückarten
+        >Prediction von Kleidungsarten
     
 
 3.3 Modelling and Evaluation
 
-4 Results
+    >Das Ziel ist es, ein Modell zu entwickeln, das nach einer bestimmten Anzahl an "Likes" und "Dislikes" von Kleidungsstücken eine Vorhersage trifft: Es sollen Kleidungsstücke vorgeschlagen werden, die dem individuellen Geschmack der Nutzer*innen entsprechen. Dabei wird ein einfaches,         aber effektives Klassifikations- oder Empfehlungssystem verwendet. Eine Evaluation erfolgt auf Basis der Vorhersagegenauigkeit sowie der Nutzerzufriedenheit (z. B. über Testdurchläufe in der App).
+    
+
+4. Results
+
+Akuteller Stand (Woche 23.06): Streamlit-Anwendung mit Datensatz integriert, Model zur Vorhersage um welche Klamotten es sich handelt, Ersten Prototyp zur Vorhersage von welchen Klamotten einen gefallen könnte
 
 5 Discussion
+Aktueller Probleme: 
+    Swipe Funktion muss noch integriert werden, 
+    Prototyp muss in die Website mit eingebunden werden,
+    (aktuellen Datensatz in einen Farbigen Datensatz ändern und nach Geschlechtern trennen)... muss noch angesprochen werden
