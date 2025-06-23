@@ -1,0 +1,1502 @@
+[
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\01.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\02.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\03.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\04.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\05.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\06.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\07.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\08.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\09.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\pants\\10.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\01.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\02.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\03.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\04.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\05.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\06.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\07.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\08.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\09.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shirt\\10.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\01.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\02.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\03.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\04.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\05.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\06.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\07.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\08.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\09.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shoes\\10.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\01.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\02.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\03.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\04.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\05.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\06.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\07.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\08.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\09.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\shorts\\10.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\01.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\02.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\03.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\04.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\05.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\06.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\07.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\08.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\09.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\sneakers\\10.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\01.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\02.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\03.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\04.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\05.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\06.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\07.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\08.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\09.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\test\\t-shirt\\10.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\01.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\02.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\03.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\04.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\05.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\06.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\07.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\08.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\09.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\10.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "11.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\11.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "12.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\12.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "13.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\13.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "14.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\14.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "15.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\15.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "16.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\16.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "17.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\17.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "18.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\18.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "19.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\19.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "20.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\20.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "21.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\21.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "22.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\22.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "23.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\23.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "24.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\24.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "25.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\25.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "26.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\26.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "27.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\27.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "28.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\28.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "29.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\29.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "30.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\30.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "31.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\31.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "32.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\32.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "33.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\33.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "34.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\34.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "35.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\35.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "36.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\36.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "37.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\37.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "38.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\38.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "39.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\39.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "40.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\pants\\40.jpg",
+        "label": "pants"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\01.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\02.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\03.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\04.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\05.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\06.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\07.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\08.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\09.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\10.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "11.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\11.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "12.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\12.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "13.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\13.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "14.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\14.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "15.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\15.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "16.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\16.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "17.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\17.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "18.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\18.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "19.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\19.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "20.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\20.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "21.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\21.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "22.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\22.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "23.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\23.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "24.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\24.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "25.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\25.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "26.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\26.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "27.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\27.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "28.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\28.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "29.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\29.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "30.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\30.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "31.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\31.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "32.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\32.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "33.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\33.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "34.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\34.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "35.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\35.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "36.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\36.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "37.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\37.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "38.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\38.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "39.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\39.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "40.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shirt\\40.jpg",
+        "label": "shirt"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\01.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\02.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\03.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\04.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\05.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\06.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\07.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\08.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\09.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\10.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "11.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\11.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "12.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\12.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "13.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\13.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "14.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\14.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "15.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\15.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "16.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\16.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "17.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\17.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "18.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\18.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "19.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\19.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "20.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\20.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "21.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\21.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "22.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\22.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "23.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\23.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "24.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\24.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "25.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\25.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "26.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\26.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "27.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\27.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "28.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\28.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "29.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\29.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "30.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\30.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "31.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\31.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "32.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\32.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "33.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\33.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "34.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\34.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "35.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\35.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "36.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\36.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "37.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\37.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "38.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\38.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "39.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\39.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "40.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shoes\\40.jpg",
+        "label": "shoes"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\01.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\02.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\03.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\04.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\05.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\06.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\07.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\08.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\09.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\10.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "11.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\11.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "12.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\12.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "13.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\13.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "14.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\14.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "15.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\15.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "16.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\16.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "17.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\17.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "18.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\18.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "19.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\19.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "20.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\20.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "21.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\21.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "22.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\22.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "23.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\23.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "24.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\24.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "25.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\25.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "26.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\26.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "27.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\27.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "28.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\28.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "29.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\29.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "30.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\30.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "31.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\31.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "32.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\32.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "33.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\33.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "34.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\34.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "35.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\35.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "36.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\36.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "37.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\37.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "38.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\38.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "39.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\39.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "40.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\shorts\\40.jpg",
+        "label": "shorts"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\01.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\02.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\03.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\04.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\05.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\06.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\07.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\08.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\09.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\10.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "11.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\11.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "12.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\12.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "13.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\13.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "14.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\14.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "15.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\15.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "16.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\16.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "17.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\17.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "18.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\18.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "19.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\19.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "20.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\20.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "21.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\21.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "22.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\22.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "23.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\23.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "24.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\24.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "25.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\25.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "26.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\26.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "27.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\27.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "28.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\28.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "29.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\29.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "30.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\30.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "31.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\31.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "32.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\32.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "33.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\33.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "34.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\34.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "35.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\35.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "36.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\36.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "37.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\37.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "38.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\38.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "39.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\39.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "40.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\sneakers\\40.jpg",
+        "label": "sneakers"
+    },
+    {
+        "filename": "01.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\01.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "02.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\02.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "03.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\03.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "04.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\04.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "05.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\05.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "06.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\06.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "07.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\07.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "08.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\08.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "09.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\09.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "10.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\10.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "11.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\11.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "12.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\12.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "13.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\13.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "14.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\14.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "15.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\15.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "16.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\16.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "17.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\17.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "18.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\18.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "19.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\19.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "20.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\20.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "21.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\21.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "22.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\22.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "23.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\23.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "24.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\24.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "25.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\25.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "26.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\26.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "27.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\27.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "28.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\28.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "29.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\29.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "30.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\30.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "31.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\31.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "32.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\32.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "33.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\33.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "34.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\34.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "35.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\35.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "36.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\36.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "37.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\37.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "38.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\38.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "39.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\39.jpg",
+        "label": "t-shirt"
+    },
+    {
+        "filename": "40.jpg",
+        "path": "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2\\clothes\\train\\t-shirt\\40.jpg",
+        "label": "t-shirt"
+    }
+]

@@ -1,0 +1,74 @@
+import os
+import json
+import numpy as np
+from PIL import Image
+from tqdm import tqdm
+
+from tensorflow.keras.applications import MobileNetV2
+from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
+from tensorflow.keras.preprocessing.image import img_to_array
+from tensorflow.keras.models import Model
+
+# Funktion: Embedding aus Bilddatei erzeugen
+def get_embedding_from_local_path(image_path):
+    try:
+        image = Image.open(image_path).convert("RGB")
+        image = image.resize((224, 224))
+        image_array = img_to_array(image)
+        image_array = np.expand_dims(image_array, axis=0)
+        image_array = preprocess_input(image_array)
+
+        model = MobileNetV2(weights="imagenet", include_top=False, pooling="avg")
+        embedding = model.predict(image_array)
+        return embedding[0].tolist()
+    except Exception as e:
+        print(f"❌ Fehler bei {image_path}: {e}")
+        return None
+
+# Metadaten laden
+with open("images_metadata.json", "r") as f:
+    metadata = json.load(f)
+
+embeddings = {}
+
+# Embeddings generieren
+for entry in tqdm(metadata):
+    filename = entry["filename"]
+    
+    image_path = entry["path"].replace(
+    "C:\\Users\\andre\\.cache\\kagglehub\\datasets\\gustavofadel\\clothes-dataset\\versions\\2",
+    "C:\\Users\\denod\\.clothes_dataset"
+
+)
+
+    embedding = get_embedding_from_local_path(image_path)
+    
+    if embedding is not None:
+        embeddings[filename] = embedding
+
+# Embeddings speichern
+with open("image_embeddings.json", "w") as f:
+    json.dump(embeddings, f, indent=4)
+
+print("✅ Embeddings wurden erfolgreich in 'image_embeddings.json' gespeichert.")
+
+# Anzahl generierter Embeddings anzeigen
+print(f"📊 Anzahl der generierten Embeddings: {len(embeddings)}")
+if embeddings:
+    print(f"🖼️ Beispiel-Dateiname: {list(embeddings.keys())[0]}")
+    print(f"📐 Beispiel-Embedding (gekürzt): {embeddings[list(embeddings.keys())[0]][:5]}")
+else:
+    print("⚠️ Keine Embeddings wurden generiert.")
+
+import zipfile
+import os
+
+# Pfad zur ZIP-Datei aus Kaggle
+zip_path = os.path.expanduser("~/.kaggle/clothes-dataset.zip")
+extract_path = os.path.expanduser("~/.clothes_dataset")
+
+# Entpacken
+with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+    zip_ref.extractall(extract_path)
+
+print("✅ Dataset entpackt nach:", extract_path)
