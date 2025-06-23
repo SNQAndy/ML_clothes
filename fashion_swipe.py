@@ -17,7 +17,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS für besseres Styling + Swipe Funktionalität + Favoriten-Liste
+# Custom CSS für besseres Styling + verbesserte Swipe Funktionalität
 st.markdown("""
 <style>
     .main-header {
@@ -42,11 +42,13 @@ st.markdown("""
         box-shadow: 0 8px 32px rgba(0,0,0,0.1);
         border: 1px solid rgba(255,255,255,0.2);
         margin: 20px 0;
-        transition: transform 0.3s ease, opacity 0.3s ease;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
         position: relative;
         cursor: grab;
         user-select: none;
-        touch-action: pan-x;
+        touch-action: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
     }
     
     .fashion-card:active {
@@ -55,16 +57,17 @@ st.markdown("""
     
     .fashion-card.dragging {
         transition: none;
+        cursor: grabbing;
     }
     
-    .fashion-card.swipe-left {
-        transform: translateX(-100px) rotate(-10deg);
-        opacity: 0.5;
+    .fashion-card.removed-left {
+        transform: translateX(-150%) rotate(-30deg) !important;
+        opacity: 0 !important;
     }
     
-    .fashion-card.swipe-right {
-        transform: translateX(100px) rotate(10deg);
-        opacity: 0.5;
+    .fashion-card.removed-right {
+        transform: translateX(150%) rotate(30deg) !important;
+        opacity: 0 !important;
     }
     
     .swipe-indicator {
@@ -191,14 +194,11 @@ st.markdown("""
     
     .fashion-image img {
         pointer-events: none;
-    }
-    
-    .hidden-buttons {
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        position: absolute;
-        top: -1000px;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
     }
     
     /* Favoriten-Liste Styling */
@@ -290,37 +290,6 @@ st.markdown("""
         padding: 40px 20px;
         opacity: 0.8;
         font-size: 1.1rem;
-    }
-    
-    .nav-tabs {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        background: #f8f9fa;
-        border-radius: 25px;
-        padding: 5px;
-    }
-    
-    .nav-tab {
-        flex: 1;
-        text-align: center;
-        padding: 12px 20px;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-weight: 500;
-        color: #666;
-    }
-    
-    .nav-tab.active {
-        background: linear-gradient(45deg, #FF6B9D, #4ECDC4);
-        color: white;
-        box-shadow: 0 4px 15px rgba(255,107,157,0.3);
-    }
-    
-    .nav-tab:hover:not(.active) {
-        background: #e9ecef;
-        color: #333;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -594,17 +563,6 @@ def render_swipe_tab():
         # Aktueller Artikel
         current_item = items[current_idx]
         
-        # Versteckte Buttons für JavaScript-Trigger
-        st.markdown('<div class="hidden-buttons">', unsafe_allow_html=True)
-        
-        col_h1, col_h2 = st.columns(2)
-        with col_h1:
-            dislike_btn = st.button("👎 Skip", key=f"hidden_dislike_{current_idx}")
-        with col_h2:
-            like_btn = st.button("❤️ Like", key=f"hidden_like_{current_idx}")
-        
-        st.markdown('</div>', unsafe_allow_html=True)
-        
         # Artikel anzeigen
         col1, col2, col3 = st.columns([1, 3, 1])
         
@@ -625,169 +583,181 @@ def render_swipe_tab():
             </div>
             """, unsafe_allow_html=True)
         
-        # Sichtbare Fallback-Buttons
+        # Sichtbare Buttons
         st.markdown("---")
         st.markdown("<p style='text-align: center; color: #888;'>Oder nutze die Buttons:</p>", unsafe_allow_html=True)
         
         col1, col2, col3, col4, col5 = st.columns([1, 2, 1, 2, 1])
         
         with col2:
-            if st.button("👎 Nicht interessiert", type="secondary", use_container_width=True, key=f"visible_dislike_{current_idx}"):
+            if st.button("👎 Nicht interessiert", type="secondary", use_container_width=True, key=f"dislike_{current_idx}"):
                 dislike_item()
                 st.rerun()
         
         with col4:
-            if st.button("❤️ Gefällt mir!", type="primary", use_container_width=True, key=f"visible_like_{current_idx}"):
+            if st.button("❤️ Gefällt mir!", type="primary", use_container_width=True, key=f"like_{current_idx}"):
                 like_item()
                 st.rerun()
-        
-        # Prüfen ob versteckte Buttons geklickt wurden
-        if dislike_btn:
-            dislike_item()
-            st.rerun()
-        
-        if like_btn:
-            like_item()
-            st.rerun()
     
-    # JavaScript für Swipe-Funktionalität
+    # Verbessertes JavaScript für Swipe-Funktionalität (basierend auf testAnwendung.html)
     st.markdown(f"""
     <script>
     (function() {{
+        let currentCard = null;
+        let isDragging = false;
         let startX = 0;
         let startY = 0;
-        let currentX = 0;
-        let currentY = 0;
-        let isDragging = false;
-        let swipeThreshold = 80;
-        let card = null;
+        let offsetX = 0;
+        let offsetY = 0;
+        const swipeThreshold = 50;
+        const rotationThreshold = 20;
         
         function initSwipe() {{
-            card = document.querySelector('#fashion-card-{current_idx}');
-            if (!card) return;
+            currentCard = document.querySelector('#fashion-card-{current_idx}');
+            if (!currentCard) return;
             
             // Entferne alte Event Listener
-            card.removeEventListener('touchstart', handleTouchStart);
-            card.removeEventListener('touchmove', handleTouchMove);
-            card.removeEventListener('touchend', handleTouchEnd);
-            card.removeEventListener('mousedown', handleMouseDown);
-            card.removeEventListener('mousemove', handleMouseMove);
-            card.removeEventListener('mouseup', handleMouseUp);
-            card.removeEventListener('mouseleave', handleMouseUp);
+            currentCard.removeEventListener('touchstart', handleTouchStart);
+            currentCard.removeEventListener('touchmove', handleTouchMove);
+            currentCard.removeEventListener('touchend', handleTouchEnd);
+            currentCard.removeEventListener('mousedown', handleMouseDown);
             
             // Touch Events
-            card.addEventListener('touchstart', handleTouchStart, {{ passive: false }});
-            card.addEventListener('touchmove', handleTouchMove, {{ passive: false }});
-            card.addEventListener('touchend', handleTouchEnd, {{ passive: false }});
+            currentCard.addEventListener('touchstart', handleTouchStart, {{ passive: false }});
+            currentCard.addEventListener('touchmove', handleTouchMove, {{ passive: false }});
+            currentCard.addEventListener('touchend', handleTouchEnd, {{ passive: false }});
             
             // Mouse Events für Desktop
-            card.addEventListener('mousedown', handleMouseDown);
-            document.addEventListener('mousemove', handleMouseMove);
-            document.addEventListener('mouseup', handleMouseUp);
+            currentCard.addEventListener('mousedown', handleMouseDown);
         }}
         
         function handleTouchStart(e) {{
+            if (!currentCard) return;
             e.preventDefault();
+            isDragging = true;
             startX = e.touches[0].clientX;
             startY = e.touches[0].clientY;
-            isDragging = true;
-            card.classList.add('dragging');
+            currentCard.classList.add('dragging');
         }}
         
         function handleTouchMove(e) {{
-            if (!isDragging) return;
+            if (!isDragging || !currentCard) return;
             e.preventDefault();
             
-            currentX = e.touches[0].clientX - startX;
-            currentY = e.touches[0].clientY - startY;
+            const currentX = e.touches[0].clientX;
+            const currentY = e.touches[0].clientY;
+            offsetX = currentX - startX;
+            offsetY = currentY - startY;
             
             updateCardPosition();
         }}
         
         function handleTouchEnd(e) {{
-            if (!isDragging) return;
+            if (!isDragging || !currentCard) return;
             e.preventDefault();
             isDragging = false;
-            card.classList.remove('dragging');
+            currentCard.classList.remove('dragging');
             
             handleSwipeEnd();
         }}
         
         function handleMouseDown(e) {{
+            if (!currentCard) return;
+            isDragging = true;
             startX = e.clientX;
             startY = e.clientY;
-            isDragging = true;
-            card.classList.add('dragging');
+            currentCard.classList.add('dragging');
             e.preventDefault();
+            
+            // Event Listener für mousemove und mouseup auf document
+            document.addEventListener('mousemove', handleMouseMove);
+            document.addEventListener('mouseup', handleMouseUp);
         }}
         
         function handleMouseMove(e) {{
-            if (!isDragging) return;
+            if (!isDragging || !currentCard) return;
             
-            currentX = e.clientX - startX;
-            currentY = e.clientY - startY;
+            const currentX = e.clientX;
+            const currentY = e.clientY;
+            offsetX = currentX - startX;
+            offsetY = currentY - startY;
             
             updateCardPosition();
         }}
         
         function handleMouseUp(e) {{
-            if (!isDragging) return;
+            if (!isDragging || !currentCard) return;
             isDragging = false;
-            card.classList.remove('dragging');
+            currentCard.classList.remove('dragging');
+            
+            document.removeEventListener('mousemove', handleMouseMove);
+            document.removeEventListener('mouseup', handleMouseUp);
             
             handleSwipeEnd();
         }}
         
         function updateCardPosition() {{
-            if (!card) return;
+            if (!currentCard) return;
             
-            const rotation = currentX * 0.1;
-            card.style.transform = `translateX(${{currentX}}px) rotate(${{rotation}}deg)`;
+            const rotate = offsetX / rotationThreshold;
+            currentCard.style.transform = `translate(${{offsetX}}px, ${{offsetY}}px) rotate(${{rotate}}deg)`;
             
             // Zeige Swipe-Indikatoren
-            card.classList.remove('show-left', 'show-right');
-            if (Math.abs(currentX) > 50) {{
-                if (currentX > 0) {{
-                    card.classList.add('show-right');
+            currentCard.classList.remove('show-left', 'show-right');
+            if (Math.abs(offsetX) > 50) {{
+                if (offsetX > 0) {{
+                    currentCard.classList.add('show-right');
                 }} else {{
-                    card.classList.add('show-left');
+                    currentCard.classList.add('show-left');
                 }}
             }}
         }}
         
         function handleSwipeEnd() {{
-            if (!card) return;
+            if (!currentCard) return;
             
-            if (Math.abs(currentX) > swipeThreshold) {{
-                if (currentX > 0) {{
+            if (Math.abs(offsetX) > swipeThreshold) {{
+                if (offsetX > 0) {{
                     // Swipe Right - Like
-                    triggerLike();
+                    currentCard.classList.add('removed-right');
+                    setTimeout(() => {{
+                        triggerLike();
+                    }}, 300);
                 }} else {{
                     // Swipe Left - Dislike  
-                    triggerDislike();
+                    currentCard.classList.add('removed-left');
+                    setTimeout(() => {{
+                        triggerDislike();
+                    }}, 300);
                 }}
             }} else {{
                 // Zurück zur Originalposition
-                card.style.transform = '';
-                card.classList.remove('show-left', 'show-right');
+                currentCard.style.transform = 'translate(0,0) rotate(0deg)';
+                currentCard.classList.remove('show-left', 'show-right');
             }}
             
-            currentX = 0;
-            currentY = 0;
+            offsetX = 0;
+            offsetY = 0;
         }}
         
         function triggerLike() {{
-            const likeButton = document.querySelector('button[key="hidden_like_{current_idx}"]');
-            if (likeButton) {{
-                likeButton.click();
-            }}
+            // Finde den Like-Button über seinen Text
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {{
+                if (button.textContent.includes('Gefällt mir!') && button.closest('[data-testid="column"]')) {{
+                    button.click();
+                }}
+            }});
         }}
         
         function triggerDislike() {{
-            const dislikeButton = document.querySelector('button[key="hidden_dislike_{current_idx}"]');
-            if (dislikeButton) {{
-                dislikeButton.click();
-            }}
+            // Finde den Dislike-Button über seinen Text
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {{
+                if (button.textContent.includes('Nicht interessiert') && button.closest('[data-testid="column"]')) {{
+                    button.click();
+                }}
+            }});
         }}
         
         // Initialisiere Swipe
@@ -1020,38 +990,68 @@ def main():
     st.markdown('<div class="main-header">👗 Fashion Swipe</div>', unsafe_allow_html=True)
     st.markdown('<div class="sub-header">Entdecke deinen Style mit Fashion-MNIST Datensatz!</div>', unsafe_allow_html=True)
     
-    # Navigation Tabs
+    # Tab-Auswahl mit gestylten Streamlit-Buttons
     st.markdown("""
-    <div class="nav-tabs">
-        <div class="nav-tab {}" onclick="switchTab('swipe')">
-            🔄 Swipe
-        </div>
-        <div class="nav-tab {}" onclick="switchTab('favorites')">
-            ⭐ Favoriten ({})
-        </div>
-        <div class="nav-tab {}" onclick="switchTab('analytics')">
-            📊 Analyse
-        </div>
-    </div>
-    """.format(
-        "active" if st.session_state.current_tab == "swipe" else "",
-        "active" if st.session_state.current_tab == "favorites" else "",
-        len(st.session_state.all_time_favorites),
-        "active" if st.session_state.current_tab == "analytics" else ""
-    ), unsafe_allow_html=True)
+    <style>
+    /* Tab Button Container - gezielt das erste Element nach dem Header */
+    div[data-testid="stHorizontalBlock"]:first-of-type {
+        background: #f8f9fa;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 20px 0;
+    }
     
-    # Tab-Auswahl Buttons (versteckt, aber für Funktionalität notwendig)
+    /* Tab Buttons Styling */
+    div[data-testid="stHorizontalBlock"]:first-of-type button {
+        background: transparent;
+        border: none;
+        border-radius: 20px;
+        padding: 12px 20px;
+        font-weight: 500;
+        color: #666;
+        transition: all 0.3s ease;
+    }
+    
+    div[data-testid="stHorizontalBlock"]:first-of-type button:hover {
+        background: #e9ecef;
+        color: #333;
+    }
+    
+    /* Active Tab Styling */
+    """ + ("""
+    div[data-testid="stHorizontalBlock"]:first-of-type div[data-testid="column"]:nth-child(1) button {
+        background: linear-gradient(45deg, #FF6B9D, #4ECDC4) !important;
+        color: white !important;
+        box-shadow: 0 4px 15px rgba(255,107,157,0.3) !important;
+    }
+    """ if st.session_state.current_tab == "swipe" else "") + ("""
+    div[data-testid="stHorizontalBlock"]:first-of-type div[data-testid="column"]:nth-child(2) button {
+        background: linear-gradient(45deg, #FF6B9D, #4ECDC4) !important;
+        color: white !important;
+        box-shadow: 0 4px 15px rgba(255,107,157,0.3) !important;
+    }
+    """ if st.session_state.current_tab == "favorites" else "") + ("""
+    div[data-testid="stHorizontalBlock"]:first-of-type div[data-testid="column"]:nth-child(3) button {
+        background: linear-gradient(45deg, #FF6B9D, #4ECDC4) !important;
+        color: white !important;
+        box-shadow: 0 4px 15px rgba(255,107,157,0.3) !important;
+    }
+    """ if st.session_state.current_tab == "analytics" else "") + """
+    </style>
+    """, unsafe_allow_html=True)
+    
+    # Tab Buttons
     col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("🔄 Swipe", key="tab_swipe"):
+        if st.button("🔄 Swipe", key="tab_swipe", use_container_width=True):
             st.session_state.current_tab = "swipe"
             st.rerun()
     with col2:
-        if st.button(f"⭐ Favoriten ({len(st.session_state.all_time_favorites)})", key="tab_favorites"):
+        if st.button(f"⭐ Favoriten ({len(st.session_state.all_time_favorites)})", key="tab_favorites", use_container_width=True):
             st.session_state.current_tab = "favorites"
             st.rerun()
     with col3:
-        if st.button("📊 Analyse", key="tab_analytics"):
+        if st.button("📊 Analyse", key="tab_analytics", use_container_width=True):
             st.session_state.current_tab = "analytics"
             st.rerun()
     
@@ -1134,23 +1134,9 @@ def main():
             for class_id, class_name in FASHION_CLASSES.items():
                 st.markdown(f"• {class_name}")
 
-    # JavaScript für Tab-Navigation
+    # JavaScript für Remove-Funktion
     st.markdown("""
     <script>
-    function switchTab(tabName) {
-        // Trigger entsprechenden Button-Klick
-        const buttons = document.querySelectorAll('[data-testid="stButton"] button');
-        buttons.forEach(button => {
-            if (button.textContent.includes('Swipe') && tabName === 'swipe') {
-                button.click();
-            } else if (button.textContent.includes('Favoriten') && tabName === 'favorites') {
-                button.click();
-            } else if (button.textContent.includes('Analyse') && tabName === 'analytics') {
-                button.click();
-            }
-        });
-    }
-    
     function removeFavorite(originalIndex) {
         // Trigger entsprechenden Remove-Button
         const removeButtons = document.querySelectorAll('[data-testid="stButton"] button');
@@ -1164,5 +1150,4 @@ def main():
     """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
-
     main()
