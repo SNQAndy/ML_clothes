@@ -6,7 +6,7 @@ Motivation
 
 Research question
 
-    >Lässt sich ein Zusammenhang zwwischen Kleidungsstücken herstellen, die uns gefallen, und ist es Möglich relativ simple vorhersagen zu treffen ob uns ähnliche Klamotten gefallen?
+    >Lässt sich ein Zusammenhang zwischen Kleidungsstücken herstellen, die uns gefallen, und ist es Möglich relativ simple vorhersagen zu treffen ob uns ähnliche Klamotten gefallen?
 
 Goal
 
@@ -28,6 +28,7 @@ How to use this repository
 2 Related Work
 
     >Artikel "Clothing similarity computation based on TLAC" (https://www.emerald.com/insight/content/doi/10.1108/09556221211232856/full/html)
+    > Git Repo https://github.com/GaParmar/img2img-turbo
     
 
 3 Methodology    
