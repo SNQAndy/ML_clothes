@@ -13,18 +13,32 @@ sys.path.append(p)
 from model import make_1step_sched, my_vae_encoder_fwd, my_vae_decoder_fwd
 
 
+#class TwinConv(torch.nn.Module):
+#    def __init__(self, convin_pretrained, convin_curr):
+#        super(TwinConv, self).__init__()
+#        self.conv_in_pretrained = copy.deepcopy(convin_pretrained)
+#        self.conv_in_curr = copy.deepcopy(convin_curr)
+#        self.r = None
+#
+#    def forward(self, x):
+#        x1 = self.conv_in_pretrained(x).detach()
+#        x2 = self.conv_in_curr(x)
+#        return x1 * (1 - self.r) + x2 * (self.r)
+
+
 class TwinConv(torch.nn.Module):
     def __init__(self, convin_pretrained, convin_curr):
         super(TwinConv, self).__init__()
         self.conv_in_pretrained = copy.deepcopy(convin_pretrained)
         self.conv_in_curr = copy.deepcopy(convin_curr)
-        self.r = None
+        self.r = 1.0  # Standardwert auf 1.0 setzen
 
     def forward(self, x):
+        # Falls self.r None ist, Standardwert verwenden
+        r = self.r if self.r is not None else 1.0
         x1 = self.conv_in_pretrained(x).detach()
         x2 = self.conv_in_curr(x)
-        return x1 * (1 - self.r) + x2 * (self.r)
-
+        return x1 * (1 - r) + x2 * r
 
 class Pix2PixTurbo(torch.nn.Module):
     def __init__(self, pretrained_name=None, pretrained_path=None, ckpt_folder="checkpoints", lora_rank_unet=8, lora_rank_vae=4):

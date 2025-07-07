@@ -13,6 +13,13 @@ import cv2
 from collections import Counter
 import torchvision.transforms as transforms
 
+# Konfiguration der Streamlit-Seite
+st.set_page_config(
+    page_title="Fashion Swipe & Generate",
+    page_icon="👗",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 # Importiere das Pix2Pix Turbo Modell
 try:
     from pix2pix_turbo import Pix2PixTurbo
@@ -21,13 +28,7 @@ except ImportError:
     PIX2PIX_AVAILABLE = False
     st.warning("Pix2Pix Turbo Modell nicht verfügbar. Verwende Mock-Generierung.")
 
-# Konfiguration der Streamlit-Seite
-st.set_page_config(
-    page_title="Fashion Swipe & Generate",
-    page_icon="👗",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
+
 
 # Custom CSS (gleich wie vorher)
 st.markdown("""
@@ -609,7 +610,7 @@ def render_generate_tab():
                         st.warning("Maximal 5 Items können ausgewählt werden!")
                 st.rerun()
             
-            st.image(item['image_data'], caption=item['category'], use_column_width=True)
+            st.image(item['image_data'], caption=item['category'], use_container_width=True)
     
     # Zeige ausgewählte Items
     if st.session_state.selected_for_generation:
@@ -668,7 +669,7 @@ def render_generate_tab():
         with st.expander("🖊️ Skizze-Vorschau anzeigen"):
             preview_sketch = create_realistic_fashion_sketch(st.session_state.selected_for_generation)
             st.image(preview_sketch, caption="Diese Skizze wird als Basis für die Generierung verwendet", 
-                    use_column_width=True)
+                    use_container_width=True)
         
         if st.button("🎨 Design generieren!", type="primary", use_container_width=True):
             with st.spinner("🎨 Dein personalisiertes Fashion-Design wird erstellt..."):
@@ -711,7 +712,7 @@ def render_generate_tab():
                     
                     col1, col2 = st.columns([2, 1])
                     with col1:
-                        st.image(generated_image, caption="Dein generiertes Fashion-Design", use_column_width=True)
+                        st.image(generated_image, caption="Dein generiertes Fashion-Design", use_container_width=True)
                     
                     with col2:
                         st.markdown("#### 📝 Design-Details")
@@ -756,7 +757,7 @@ def render_gallery_tab():
     for idx, gen_data in enumerate(reversed(st.session_state.generated_images)):
         col_idx = idx % 3
         with cols[col_idx]:
-            st.image(gen_data['image'], use_column_width=True)
+            st.image(gen_data['image'], use_container_width=True)
             st.caption(f"{gen_data['style_mood']} - {gen_data['color_scheme']}")
             st.text(f"Qualität: {gen_data.get('quality', 'Standard')}")
             st.text(f"Erstellt: {datetime.fromisoformat(gen_data['timestamp']).strftime('%d.%m.%Y %H:%M')}")
@@ -808,7 +809,7 @@ def render_favorites_tab():
     cols = st.columns(6)
     for idx, item in enumerate(filtered_favorites):
         with cols[idx % 6]:
-            st.image(item['image_data'], caption=item['category'], use_column_width=True)
+            st.image(item['image_data'], caption=item['category'], use_container_width=True)
             if st.button("❌", key=f"remove_{item['original_index']}", help="Aus Favoriten entfernen"):
                 st.session_state.all_time_favorites = [
                     f for f in st.session_state.all_time_favorites 
