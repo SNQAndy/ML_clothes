@@ -13,6 +13,11 @@ import cv2
 from collections import Counter
 import torchvision.transforms as transforms
 
+#test for Streamlitdeploy:
+import sys, os
+sys.path.append(os.path.dirname(__file__))
+
+
 # Konfiguration der Streamlit-Seite
 st.set_page_config(
     page_title="Fashion Swipe & Generate",
