@@ -9,6 +9,13 @@ import io
 import base64
 import json
 
+#Try
+from collections import Counter
+from pix2pix_turbo import Pix2PixTurbo
+# ML-/Image-to-Image Imports
+import torch
+import torchvision.transforms.functional as F
+
 # Konfiguration der Streamlit-Seite
 st.set_page_config(
     page_title="Fashion Swipe",
@@ -16,6 +23,39 @@ st.set_page_config(
     layout="centered",
     initial_sidebar_state="collapsed"
 )
+
+@st.cache_data(show_spinner=False)
+def load_img2img_model(model_name: str):
+    """Lädt das Sketch→Image pix2pix-turbo Modell."""
+    model = Pix2PixTurbo(pretrained_name=model_name)
+    model.set_eval()
+    if torch.cuda.is_available():
+        model.cuda()
+    return model
+
+@st.cache_data
+def load_data():
+    """Lädt Fashion-MNIST Daten."""
+    return pd.read_csv('fashion_mnist.csv')
+
+
+def generate_sketch_to_image(model, input_pil: Image.Image, prompt: str) -> Image.Image:
+    """Generiert ein Bild aus einem Sketch mit pix2pix-turbo."""
+    # Immer in RGB konvertieren!
+    input_pil = input_pil.convert("RGB")
+    tensor = F.to_tensor(input_pil).unsqueeze(0)
+    if torch.cuda.is_available():
+        tensor = tensor.cuda()
+    with torch.no_grad():
+        out = model(tensor, prompt, deterministic=True)
+    img_tensor = (out[0].cpu() * 0.5 + 0.5).clamp(0,1)
+    return F.to_pil_image(img_tensor)
+# filepath: c:\ML_clothes\ML_clothes\fashion_swipe.py
+
+
+
+
+#neu zuende
 
 # Custom CSS für besseres Styling + Swipe Funktionalität + Favoriten-Liste
 st.markdown("""
@@ -581,7 +621,33 @@ def render_swipe_tab():
         if st.button("🔄 Neue Session starten", type="primary", use_container_width=True):
             reset_session()
             st.rerun()
-            
+
+
+    #TESTEN DER GENERIERUNG VON SKETCH-TO-IMAGE
+    # Sketch-to-Image Empfehlungen
+    if st.session_state.current_index >= len(st.session_state.fashion_items):
+        st.markdown("---")
+        if st.session_state.liked_items:
+            st.write("## 🖼️ Sketch-to-Image Empfehlungen")
+            model_name = 'sketch_to_image_stochastic'
+            model = load_img2img_model(model_name)
+            cols = st.columns(len(st.session_state.liked_items))
+            for col, fav in zip(cols, st.session_state.liked_items):
+                #orig = st.session_state.data.iloc[fav['index']]
+                #pil = Image.open(io.BytesIO(base64.b64decode(orig['image_base64'])))
+                pil = Image.open(io.BytesIO(base64.b64decode(fav['image_data'].split(",")[1])))
+                prompt = fav['category']
+                with st.spinner("Generiere Skizzen-Varianten..."):
+                    out = generate_sketch_to_image(model, pil, prompt)
+                col.image(out, caption=f"Variante: {prompt}")
+        else:
+            st.info("Like zuerst einige Bilder, um Varianten zu sehen.")
+
+
+
+
+
+
     else:
         # Swipe Instructions
         st.markdown("""
