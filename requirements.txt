@@ -3,3 +3,7 @@ pandas
 tensorflow==2.15.0
 numpy
 Pillow
+torch
+torchvision
+opencv-python
+pix2pix-turbo
