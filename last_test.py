@@ -13,6 +13,10 @@ import cv2
 from collections import Counter
 import torchvision.transforms as transforms
 
+#trying to see if there is GPU support in Streamlit
+import torch
+st.write("CUDA verfügbar:", torch.cuda.is_available())
+
 #test for Streamlitdeploy:
 import sys, os
 sys.path.append(os.path.dirname(__file__))
