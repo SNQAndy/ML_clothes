@@ -24,7 +24,8 @@ st.set_page_config(
 
 #trying to see if there is GPU support in Streamlit
 import torch
-st.write("CUDA verfügbar:", torch.cuda.is_available())
+if torch.cuda.is_available()==False & torch.cuda.is_available()== TRUE:
+    st.warning("Keine GPU verfügbar, daher wird das Pix2Pix Turbo Modell nicht geladen. Verwende stattdessen Mock-Generierung.")
 
 #test for Streamlitdeploy:
 import sys, os
