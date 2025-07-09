@@ -653,7 +653,7 @@ def render_generate_tab():
                                           help="Aktiviert für konsistente Ergebnisse")
         
         # Prompt erstellen
-        prompt_base = f"A {style_mood.lower()} fashion design with {color_scheme.lower()}, inspired by {category_text}"
+        prompt_base = f"A {style_mood.lower()} fashion design with {color_scheme.lower()}, inspired by {category_text}, realistic garment details, human model"
         
         # Erweiterte Prompt-Anpassungen
         if generation_quality == "Hohe Qualität":
