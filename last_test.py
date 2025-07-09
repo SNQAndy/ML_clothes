@@ -13,6 +13,15 @@ import cv2
 from collections import Counter
 import torchvision.transforms as transforms
 
+
+# Konfiguration der Streamlit-Seite
+st.set_page_config(
+    page_title="Fashion Swipe & Generate",
+    page_icon="👗",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
+
 #trying to see if there is GPU support in Streamlit
 import torch
 st.write("CUDA verfügbar:", torch.cuda.is_available())
@@ -22,13 +31,7 @@ import sys, os
 sys.path.append(os.path.dirname(__file__))
 
 
-# Konfiguration der Streamlit-Seite
-st.set_page_config(
-    page_title="Fashion Swipe & Generate",
-    page_icon="👗",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
+
 # Importiere das Pix2Pix Turbo Modell
 try:
     from pix2pix_turbo import Pix2PixTurbo
