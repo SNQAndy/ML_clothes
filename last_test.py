@@ -38,8 +38,8 @@ try:
     from pix2pix_turbo import Pix2PixTurbo
     PIX2PIX_AVAILABLE = True
 except ImportError:
-    PIX2PIX_AVAILABLE = False
-    st.warning("Pix2Pix Turbo Modell nicht verfügbar. Verwende Mock-Generierung.")
+    PIX2PIX_AVAILABLE = False & torch.cuda.is_available() == True
+    st.warning("Keine GPU verfügbar, daher wird das Pix2Pix Turbo Modell nicht geladen. Verwende stattdessen Mock-Generierung.")
 
 
 
