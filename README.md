@@ -1,5 +1,5 @@
 Fashionswipe
-1. Introduction
+# 1. Introduction
 Motivation
 
     Den Struggle beim Online-Shoppen kennt fast jeder: Unüberschaubare Auswahl, unklare Passformen und ständig wechselnde Trends machen Stilfindung schwer.
@@ -28,22 +28,22 @@ Target Audience
 
 How to use this repository
 
-# 1. Repository klonen
+1. Repository klonen
 git clone https://github.com/SNQAndy/ML_clothes.git
 
-# 2. Abhängigkeiten installieren
+2. Abhängigkeiten installieren
 pip install -r requirements.txt
 
-# 3. Daten explorieren & Modell trainieren
+3. Daten explorieren & Modell trainieren
 jupyter notebook
 
-# 4. Streamlit-App starten
+4. Streamlit-App starten
 streamlit run fashion_swipe_cloud.py
 
-# 5. Für eine lokale Erfahrung:
+5. Für eine lokale Erfahrung:
 python fashion_swipe_cloud.py
 
-2. Related Work
+# 2. Related Work
 
         Clothing similarity computation based on TLAC
         (Artikel-Link: https://www.emerald.com/insight/content/doi/10.1108/09556221211232856/full/html)
@@ -51,8 +51,8 @@ python fashion_swipe_cloud.py
         img2img-turbo
         (GitHub-Repo: https://github.com/GaParmar/img2img-turbo)
 
-3. Methodology
-3.1 General Methodology
+# 3. Methodology
+# 3.1 General Methodology
 
         Recherche nach bestehenden Projekten auf GitHub/GitLab
 
@@ -62,7 +62,7 @@ python fashion_swipe_cloud.py
 
         Erweiterung um Generierung und interaktive Elemente
 
-3.2 Data Understanding and Preparation
+# 3.2 Data Understanding and Preparation
 
         Kaggle Dataset (zu klein):
         Gustavo Fadel Dataset
@@ -74,7 +74,7 @@ python fashion_swipe_cloud.py
         → Skalierung (28×28 → 280×280), Normalisierung & Klartext-Label
         → Performance-Optimierung mit Lazy Loading und RAM-schonender Architektur
 
-3.3 Modelling and Evaluation
+# 3.3 Modelling and Evaluation
 
         Klassifikationsmodell: ConvNet mit 4 Conv-Blöcken, 2 FC-Layern, Adam-Optimizer
 
@@ -88,7 +88,7 @@ python fashion_swipe_cloud.py
 
             User Experience (Responsivität, Bildqualität, Ladezeiten)
 
-4. Results
+# 4. Results
 
         Klassifikator erkennt grundlegende Stilvorlieben mit hoher Genauigkeit
 
@@ -100,7 +100,7 @@ python fashion_swipe_cloud.py
 
         Prototyp unterstützt bereits einfache Style-Profilierung
 
-5. Discussion
+# 5. Discussion
 Limitationen
 
         Ausgangsdaten (Fashion-MNIST) haben geringe Auflösung
@@ -121,7 +121,7 @@ Transparenz
 
         Feedback willkommen – wir sehen das Projekt als Open-Source-Lernplattform
 
-6. Conclusion
+# 6. Conclusion
 
         Fashionswipe unterstützt Nutzer*innen spielerisch bei der Erweiterung ihres Stils
 
