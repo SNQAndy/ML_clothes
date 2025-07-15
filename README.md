@@ -71,6 +71,7 @@ python fashion_swipe_cloud.py
         Fashion-MNIST (verwendet):
         Zalando Research
         → 70.000 Graustufenbilder, 10 Kategorien
+        → 60.000 Trainingsbilder und 10.000 Testbilder
         → Skalierung (28×28 → 280×280), Normalisierung & Klartext-Label
         → Performance-Optimierung mit Lazy Loading und RAM-schonender Architektur
 
@@ -78,7 +79,13 @@ python fashion_swipe_cloud.py
 
         Klassifikationsmodell: ConvNet mit 4 Conv-Blöcken, 2 FC-Layern, Adam-Optimizer
 
-        Generative Modelle: Stable Diffusion XL Turbo, RealVIS, SDXL mit Refiner
+        Generative Modelle: Stable Diffusion XL Turbo, RealVIS, SDXL mit Refiner (Zuerst PixToPix Turbo, wurde aber ausgeschlossen da das Modell nicht Zielführend war)
+        
+        Huggingface Api für leistungstärkere Modelle, vor allem bei RealVIS da es zu groß für Streamlit ist
+        
+        Fallback Strategie falls ein Modell ausfällt wird zum nächsten Modell gewechselt und sollte die API ausfallen, wird auf das lokal integrierte Modell Stable Diffusion XL gewechselt für eine größere Robustheit
+        
+        Huggingface Api für leistungstärkere Modelle, vor allem bei RealVIS, da es zu groß für Streamlit ist
 
         Ensemble-Strategie + Adaptive Inference
 
